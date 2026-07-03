@@ -102,8 +102,7 @@ Reopen the `.bat` next time. That's the whole on/off switch.
 
 The **very first time** you index a folder, the app downloads the AI model
 (about **1.5 GB**, one time — it's cached forever after). Then it has to look at
-every video, which takes a while. ***I recommend choosing a folder with under 100 ***
-***tiktoks for your first index***. A folder of a few hundred clips can take
+every video, which takes a while. ***I recommend choosing a folder with under 100 tiktoks for your first index***. A folder of a few hundred clips can take
 **many minutes to an hour+**, especially on CPU. **Let it run.** The progress bar
 shows a live count (e.g. "37 / 200"). You can hit **Cancel** anytime — it keeps
 everything already done, and next time it only processes what's left.
