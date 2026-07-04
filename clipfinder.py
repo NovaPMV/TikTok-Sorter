@@ -65,7 +65,7 @@ except ImportError as e:
 
 APP_PORT = 8000                      # the app will live at http://localhost:8000
 INDEX_FILENAME = "clipfinder_index.json"   # where we save what we've indexed
-FRAME_INTERVAL_SECONDS = 1           # sample one frame every N seconds of video (1 fps)
+FRAME_INTERVAL_SECONDS = 2           # sample one frame every N seconds of video (1 fps)
 PREVIEW_SECONDS = None               # None = preview the FULL clip; or set a number of seconds
 PREVIEW_WIDTH = 320                  # preview width in pixels (smaller = less disk/faster)
 DEFAULT_PER_PAGE = 8                 # how many preview tiles show per page by default
@@ -832,7 +832,7 @@ HTML_PAGE = """
   <div class="folder"><label>Source folder (your videos)</label>
     <div class="pick"><input id="f_source" type="text" placeholder="C:\\tiktoks\\creatorX">
     <button class="browse" onclick="browse('f_source')">Browse</button></div></div>
-  <div class="folder"><label>Frames folder (default: 1 fps)</label>
+  <div class="folder"><label>Frames folder (default: 1 frame every 2 sec)</label>
     <div class="pick"><input id="f_frames" type="text" placeholder="C:\\clipfinder\\frames">
     <button class="browse" onclick="browse('f_frames')">Browse</button></div></div>
   <div class="folder"><label>Previews folder</label>
