@@ -152,7 +152,7 @@ vertical TikTok**:
 
 | What | Size for one 10s clip |
 |---|---|
-| Frames (1 per second, 10 total) | ~**100–300 KB** total (~10–30 KB each) |
+| Frames (1 every two seconds, 5 total) | ~**50–150 KB** total (~10–30 KB each) |
 | Preview (full length, 320px wide, muted) | ~**60–500 KB** |
 
 So a 10-second clip adds very roughly **0.2–0.8 MB** of app data. **1,000 clips ≈
@@ -162,7 +162,7 @@ proportionally. If space gets tight, see the tuning options below.
 
 ---
 
-## Making it faster or smaller (optional tuning)
+## Optional Tuning - Making it faster or more accurate
 
 All of these are simple edits near the **top of `clipfinder.py`**. Open it in any
 text editor (Notepad works). Change a value, save, and **rebuild the index** for
@@ -201,16 +201,16 @@ If you switch to a model not listed here, you may also need to update the
 `MODEL_VECTOR_DIM` line (768 for L-14/H-14, 512 for B-32) — the file has a comment
 explaining it.
 
-### Faster indexing — sample fewer frames
+### More accurate indexing — sample more frames
 
 Find:
 
-    FRAME_INTERVAL_SECONDS = 1
+    FRAME_INTERVAL_SECONDS = 2
 
-This means "look at 1 frame per second." Change it to `2` (one frame every 2
-seconds) to roughly **halve** indexing time and frame disk usage. The tradeoff:
-brief moments between samples can be missed. `1` is a good default; `2` is fine
-for most footage; `3`+ starts to skip things.
+This means "look at 1 frame every 2 seconds." Change it to `1` (one frame every 1
+second) to roughly **double** indexing time and frame disk usage. This will give you more
+accurate searches, with the tradeoff being more storage needed and a longer indexing time. 
+`1` is a good default; `2` is fine for most footage; `3`+ starts to skip things.
 
 ### Smaller previews
 
