@@ -1,5 +1,7 @@
 # TikTok Sorter — by NovaPMV
 
+<img width="960" height="400" alt="TikTokSorterFinal" src="https://github.com/user-attachments/assets/df9e1fa4-893a-45ae-b03e-68ed653bd9ec" />
+
 A local app that lets you **search a folder of videos by typing what you want**
 ("girl in a red dress", "dancing outside", "close up") and instantly get a grid
 of matching clips. Select the ones you like and copy the originals into a folder,
