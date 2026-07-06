@@ -1,6 +1,6 @@
 # TikTok Sorter — by NovaPMV
 
-<img width="960" height="400" alt="TikTokSorterFinal" src="https://github.com/user-attachments/assets/df9e1fa4-893a-45ae-b03e-68ed653bd9ec" />
+<img width="1280" height="600" alt="TikTokSorterGIF" src="https://github.com/user-attachments/assets/577ebc3b-7035-413b-b46f-f9b2a31617e9" />
 
 A local app that lets you **search a folder of videos by typing what you want**
 ("girl in a red dress", "dancing outside", "close up") and instantly get a grid
