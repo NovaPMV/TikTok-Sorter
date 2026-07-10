@@ -40,7 +40,7 @@ If you used an older version, here's what got added:
   clips are in view (handy when switching between all folders and one folder).
 - **Top and bottom page navigation**, so you don't have to scroll back up to
   change pages.
-- **Moving/renaming folder.** Now you can move or rename folders without needing
+- **Moving/renaming folders.** Now you can move or rename folders without needing
   to re-index. Just make sure you click "Save Folders" after setting new paths,
   otherwise you risk splitting your indexing across two separate Frame folders.
   
